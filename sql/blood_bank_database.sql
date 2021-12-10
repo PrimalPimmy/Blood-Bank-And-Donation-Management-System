@@ -24,7 +24,7 @@ Primary key(admin_id)
 
 /*  insert admin data into admin_info table*/
 insert into admin_info(admin_name,admin_username,admin_password)
-values("Rick","Ricky123",123);
+values("grp7","grp7",123);
 
 /*create table blood in which all blood group is stored.*/
 create table blood(
@@ -58,7 +58,7 @@ primary key(contact_id)
 );
 
 insert into contact_info(contact_address,contact_mail,contact_phone)
-values("Noida,UP(125001)","bloodbank@outlook.com","7043456789");
+values("JIIT,sector-62","grp7@gmail.com","911");
 
 
 
@@ -138,7 +138,7 @@ create table contact_query(
 query_id int auto_increment Not Null,
 query_name varchar(100) NOT NULL,
 query_mail varchar(120) NOT NULL,
-query_number char(11) NOT NULL,
+query_number INT(10) NOT NULL,
 query_message longtext NOT NULL,
 query_date timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
 query_status int(11) DEFAULT NULL,
@@ -147,9 +147,6 @@ Primary key(query_id)
 alter table contact_query modify column query_date
 timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
 
-
-insert into contact_query (query_name,query_mail,query_number,query_message) values
-("Yash","yash@gmail.com","9923471025","I need A+ Blood.");
 
 update contact_query set query_status="1" where query_id="1";
 

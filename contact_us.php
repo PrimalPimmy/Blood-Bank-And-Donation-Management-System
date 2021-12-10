@@ -74,10 +74,10 @@ $result=mysqli_query($conn,$sql) or die("query unsuccessful.");
             <h4>Address :</h4><?php echo $row['contact_address']; ?>
         </p>
         <p>
-            <h4>Email :</h4><?php echo $row['contact_phone']; ?>
+            <h4>Contact No:</h4><?php echo $row['contact_phone']; ?>
         </p>
         <p>
-          <h4>  Contact No: </h4><a href="#"><?php echo $row['contact_mail']; ?></a>
+          <h4>Email: </h4><a href="#"><?php echo $row['contact_mail']; ?></a>
           </a></b>
         </p>
         <?php }
