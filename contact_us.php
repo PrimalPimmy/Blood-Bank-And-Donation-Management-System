@@ -89,7 +89,7 @@ $result=mysqli_query($conn,$sql) or die("query unsuccessful.");
 
 </div>
 </div>
-<?php include 'footer.php' ?>
+
 </div>
 </body>
 
